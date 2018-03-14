@@ -1,9 +1,29 @@
 body {
-  background-color: #F8FFFF;
+  background-color: #FFFFFF;
+  height: 100%
 }
 
-#sassy-cat {
-  display: block;
-  margin: 0 auto;
+.container {
   height: 100%;
+  position: relative;
+}
+
+.col-md-6 {
+  display: table;
+  height: 709px;
+  position: relative;
+}
+
+.inner {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#cat {
+  display: block;
+  margin: 40px auto;
+  height: 500px;
+  background-color: beige;
+  position: relative;
 }

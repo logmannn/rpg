@@ -3,6 +3,7 @@ import 'bootstrap';
 import './styles.css';
 import { assignAttrPoints } from './../src/rpg.js';
 
+
 $(document).ready(function() {
 
 
