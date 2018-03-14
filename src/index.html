@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <title>RPG</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-6">
+        <h1>RPG</h1>
+        <h3>Attribute Points: <span class="attribute-points">15</span></h3>
+        <hr>
+        <form id="char-creation">
+          <label for="str">Strength: </label>
+          <span id="strVal">0</span>
+          <br>
+          <button type="button" id="str-decrement" class="modifier decrement btn btn-danger">-</button>
+          <button type="button" id="str-increment" class="modifier increment btn btn-primary">+</button>
+          <hr>
+          <label for="acc">Accuracy: </label>
+          <span id="accVal">0</span>
+          <br>
+          <button type="button" id="acc-decrement" class="modifier decrement btn btn-danger">-</button>
+          <button type="button" id="acc-increment" class="modifier increment btn btn-primary">+</button>
+
+          <hr>
+          <label for="def">Defense: </label>
+          <span id="defVal">0</span>
+          <br>
+          <button type="button" id="def-decrement" class="modifier decrement btn btn-danger">-</button>
+          <button type="button" id="def-increment" class="modifier increment btn btn-primary">+</button>
+
+          <hr>
+          <label for="vit">Vitality: </label>
+          <span id="vitVal">0</span>
+          <br>
+          <button type="button" id="vit-decrement" class="modifier decrement btn btn-danger">-</button>
+          <button type="button" id="vit-increment" class="modifier increment btn btn-primary">+</button>
+
+          <hr>
+          <button type="submit" class="btn btn-warning">Create!</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <img src="https://media3.giphy.com/media/V1BQUixHKNvhK/giphy.gif" alt="">
+      </div>
+    </div>
+  </body>
+</html>
