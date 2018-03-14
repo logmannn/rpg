@@ -15,9 +15,13 @@ $(document).ready(function() {
     attributePoints = parseInt($('.attribute-points').text());
     assignAttrPoints(thisId, attributePoints, 0);
   });
-  //
-  // $('#char-creation').submit(function(event) {
-  //   event.preventDefault();
-  //   // processSolution();
-  // });
+
+  $('#changeColor').click(function() {
+    // alert($("#colorChoice").val());
+    $("#cat").css("background-color", $("#colorChoice").val());
+  });
+
+  $('#char-creation').submit(function(event) {
+    event.preventDefault();
+  });
 });

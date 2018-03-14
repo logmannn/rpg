@@ -10,7 +10,7 @@ body {
 
 .col-md-6 {
   display: table;
-  height: 709px;
+  height: 100vh;
   position: relative;
 }
 
