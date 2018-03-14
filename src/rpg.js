@@ -1,6 +1,4 @@
-
-
-export function assignAttrPoints (thisId, attributePoints) {
+export function assignAttrPoints (thisId, attributePoints, attributeValTest) {
 
   var valNumber = thisId.replace(/-(.*?)$/, 'Val');
   // console.log(valNumber);
@@ -8,7 +6,7 @@ export function assignAttrPoints (thisId, attributePoints) {
   // console.log(attribute);
 
   var attributeVal = parseInt($('#'+valNumber).text());
-
+  if (attributeValTest != 0) {attributeVal = attributeValTest}
 
   if (attributePoints == 0) {
     alert("You have no more attribute points!");
@@ -17,12 +15,14 @@ export function assignAttrPoints (thisId, attributePoints) {
     if (attributePoints > 0) {
       $('#'+valNumber).html(attributeVal+1);
       $('.attribute-points').html(attributePoints-1);
+      attributePoints = attributePoints-1;
     }
   } else {
     if (attributeVal != 0) {
       if (attributeVal > 0) {
         $('#'+valNumber).html(attributeVal-1);
         $('.attribute-points').html(attributePoints+1);
+        attributePoints = attributePoints+1;
       }
       $('#'+valNumber).html(attributeVal-1);
     }
