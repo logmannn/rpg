@@ -6,9 +6,6 @@ import { assignAttrPoints } from './../src/rpg.js';
 
 $(document).ready(function() {
 
-
-
-
   $('.modifier').click(function() {
     var thisId = event.target.id;
     var attributePoints = parseInt($('.attribute-points').text());
