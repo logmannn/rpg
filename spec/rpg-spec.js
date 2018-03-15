@@ -2,7 +2,7 @@ import { assignAttrPoints } from './../src/rpg.js';
 
 
 describe('assignAttrPoints', function(){
-  var thisId = "";
+  let thisId = "";
 
   it('Removes one from the total attribute points when you press increment', function(){
     expect(assignAttrPoints("str-increment", 15, 0)).toEqual(14);

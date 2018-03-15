@@ -1,11 +1,11 @@
 export function assignAttrPoints (thisId, attributePoints, attributeValTest) {
 
-  var valNumber = thisId.replace(/-(.*?)$/, 'Val');
+  let valNumber = thisId.replace(/-(.*?)$/, 'Val');
   // console.log(valNumber);
-  var attribute = thisId.replace(/^(.*?)-/, '');
+  let attribute = thisId.replace(/^(.*?)-/, '');
   // console.log(attribute);
 
-  var attributeVal = parseInt($('#'+valNumber).text());
+  let attributeVal = parseInt($('#'+valNumber).text());
   if (attributeValTest != 0) {attributeVal = attributeValTest}
 
   if (attributePoints == 0) {

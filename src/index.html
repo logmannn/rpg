@@ -8,82 +8,94 @@
   <body>
     <div class="container">
       <h1><center>Cat Fight</center></h1>
-      <div class="col-md-6">
-        <h2>Create Your Fighter</h2>
-        <hr>
-        <form id="char-creation">
-          <label for="charName">Enter Kitty's Name: </label>
-          <input type="text" name="charName" class="form-control">
+      <div class="character-create-screen">
+        <div class="col-md-6">
+          <h2>Create Your Fighter</h2>
           <hr>
-          <div class="color-wrapper">
-            <label>Select a color: </label>
+          <form id="char-creation">
+            <label for="charName">Enter Kitty's Name: </label>
+            <input type="text" id="charName" class="form-control">
+            <hr>
+            <div class="color-wrapper">
+              <label>Select a color: </label>
 
-            <span class="color-picker" id="color-picker" style="display: none"></span>
-            <span class="color-holder call-picker"></span>
-            <button id="reset-color" type="button" class="btn btn-default">Reset Color</button>
-          </div>
-
-          <hr>
-          <h3>Attribute Points Remaining: <span class="attribute-points"></span></h3>
-          <hr>
-
-          <div class="row">
-            <div class="col-md-3">
-              <label for="str">Strength: </label>
-              <span id="strVal">0</span>
+              <span class="color-picker" id="color-picker" style="display: none"></span>
+              <span class="color-holder call-picker"></span>
+              <button id="reset-color" type="button" class="btn btn-default">Reset Color</button>
             </div>
-            <div class="col-md-9">
-              <button type="button" id="str-decrement" class="modifier decrement btn btn-danger">-</button>
-              <button type="button" id="str-increment" class="modifier increment btn btn-primary">+</button>
-            </div>
-          </div>
 
-          <hr>
+            <hr>
+            <h3>Attribute Points Remaining: <span class="attribute-points"></span></h3>
+            <hr>
 
-          <div class="row">
-            <div class="col-md-3">
-              <label for="acc">Accuracy: </label>
-              <span id="accVal">0</span>
+            <div class="row">
+              <div class="col-md-3">
+                <label for="str">Strength: </label>
+                <span id="strVal">0</span>
+              </div>
+              <div class="col-md-9">
+                <button type="button" id="str-decrement" class="modifier decrement btn btn-danger">-</button>
+                <button type="button" id="str-increment" class="modifier increment btn btn-primary">+</button>
+              </div>
             </div>
-            <div class="col-md-9">
-              <button type="button" id="acc-decrement" class="modifier decrement btn btn-danger">-</button>
-              <button type="button" id="acc-increment" class="modifier increment btn btn-primary">+</button>
-            </div>
-          </div>
 
-          <hr>
+            <hr>
 
-          <div class="row">
-            <div class="col-md-3">
-              <label for="def">Defense: </label>
-              <span id="defVal">0</span>
+            <div class="row">
+              <div class="col-md-3">
+                <label for="acc">Accuracy: </label>
+                <span id="accVal">0</span>
+              </div>
+              <div class="col-md-9">
+                <button type="button" id="acc-decrement" class="modifier decrement btn btn-danger">-</button>
+                <button type="button" id="acc-increment" class="modifier increment btn btn-primary">+</button>
+              </div>
             </div>
-            <div class="col-md-9">
-              <button type="button" id="def-decrement" class="modifier decrement btn btn-danger">-</button>
-              <button type="button" id="def-increment" class="modifier increment btn btn-primary">+</button>
-            </div>
-          </div>
 
-          <hr>
+            <hr>
 
-          <div class="row">
-            <div class="col-md-3">
-              <label for="vit">Vitality: </label>
-              <span id="vitVal">0</span>
+            <div class="row">
+              <div class="col-md-3">
+                <label for="def">Defense: </label>
+                <span id="defVal">0</span>
+              </div>
+              <div class="col-md-9">
+                <button type="button" id="def-decrement" class="modifier decrement btn btn-danger">-</button>
+                <button type="button" id="def-increment" class="modifier increment btn btn-primary">+</button>
+              </div>
             </div>
-            <div class="col-md-9">
-              <button type="button" id="vit-decrement" class="modifier decrement btn btn-danger">-</button>
-              <button type="button" id="vit-increment" class="modifier increment btn btn-primary">+</button>
-            </div>
-          </div>
 
-          <hr>
-          <button type="submit" class="btn btn-success">Create!</button>
-        </form>
+            <hr>
+
+            <div class="row">
+              <div class="col-md-3">
+                <label for="vit">Vitality: </label>
+                <span id="vitVal">0</span>
+              </div>
+              <div class="col-md-9">
+                <button type="button" id="vit-decrement" class="modifier decrement btn btn-danger">-</button>
+                <button type="button" id="vit-increment" class="modifier increment btn btn-primary">+</button>
+              </div>
+            </div>
+
+            <hr>
+            <button type="submit" class="btn btn-success">Create!</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img id="cat-image" src="http://i.cubeupload.com/FfaIjE.png" alt="angry">
+        </div>
       </div>
-      <div class="col-md-6">
-        <img id="cat-image" src="http://i.cubeupload.com/FfaIjE.png" alt="angry">
+    </div><!---->
+    <!-- <div class="container">
+      <div class="character-stats">
+        Character name: <span class="display-name"></span><br>
+        Color: <span class="display-color"></span><br>
+        Strength: <span class="display-strength"></span><br>
+        Accuracy: <span class="display-accuracy"></span><br>
+        Defense: <span class="display-defense"></span><br>
+        Vitality: <span class="display-vitality"></span><br>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
