@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>RPG</title>
   </head>
   <body>
     <div class="container">
+      <h1><center>Cat Fight</center></h1>
       <div class="col-md-6">
-        <h1>RPG</h1>
-        <h3>Attribute Points: <span class="attribute-points"></span></h3>
+        <h2>Create Your Fighter</h2>
         <hr>
         <form id="char-creation">
           <label for="charName">Enter Kitty's Name: </label>
           <input type="text" name="charName" class="form-control">
-          <br>
+          <hr>
           <div class="color-wrapper">
-            <p>Choose color (# hex)</p>
-            <input type="text" name="custom_color" placeholder="#FFFFFF" class="hex-input" id="pickcolor">
-            <span class="color-holder call-picker"></span>
+            <label>Select a color: </label>
+
             <span class="color-picker" id="color-picker" style="display: none"></span>
-            &emsp;
-            <button id="reset-color" type="button" class="btn btn-primary">Reset</button>
+            <span class="color-holder call-picker"></span>
+            <button id="reset-color" type="button" class="btn btn-default">Reset Color</button>
           </div>
 
+          <hr>
+          <h3>Attribute Points Remaining: <span class="attribute-points"></span></h3>
           <hr>
 
           <div class="row">

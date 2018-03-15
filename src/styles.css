@@ -25,9 +25,20 @@ label {
   margin-bottom: 20px;
 }
 
+#reset-color {
+  display: inline-block;
+  margin: 0 auto;
+  float: right;
+  height: 50px;
+  width: 175px;
+
+}
+
 #cat-image {
   display: block;
-  margin: 40px auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-left: 150px;
   height: 500px;
   background-color: beige;
   position: relative;
@@ -46,35 +57,17 @@ label {
 	margin-bottom: 5px;
 }
 
-.hex-input {
-	border: 1px solid #AAA;
-	color: #666;
-	text-transform: uppercase;
-	text-align: left;
-	outline: none;
-  padding: 10px;
-  text-transform: uppercase;
-  width: 150px;
-}
-
-.color-picker {
-	width: 300px;
-	background: #F3F3F3;
-	height: 100px;
-	padding: 5px;
-	border: 5px solid #fff;
-	position: relative;
-}
-
 .color-holder {
+  position: relative;
+  display: inline-block;
 	background: #fff;
 	cursor: pointer;
 	border: 1px solid #AAA;
-	width: 44px;
-	height: 44px;
-	float: left;
-	margin-left: 5px;
-  margin-right: 5px;
+	width: 50px;
+	height: 50px;
+  margin-right: 25px;
+  margin-left: 15px;
+  margin-bottom: -20px;
 }
 
 .color-picker .color-item {
