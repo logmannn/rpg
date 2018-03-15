@@ -32,15 +32,15 @@ $(document).ready(function() {
     picker.fadeIn();
     picker.children('li').hover(function() {
       let codeHex = $(this).data('hex');
-      $('.color-holder').css('background-color', codeHex);
-      $('#cat-image').css('background-color', codeHex)
+      $('.color-holder').css('fill', codeHex);
+      $('.cat-image').css('fill', codeHex);
       $('#pickcolor').val(codeHex);
     });
 
     $('#reset-color').click(function (event) {
       event.preventDefault();
-      $('#cat-image').css('background-color', "#FFFFFF");
-      $('.color-holder').css('background-color', "#FFFFFF");
+      $('.cat-image').css('fill', "#FFFFFF");
+      $('.color-holder').css('fill', "#FFFFFF");
     });
   });
 
@@ -56,18 +56,34 @@ $(document).ready(function() {
   $('#char-creation').submit(function(event) {
     event.preventDefault();
     $(".character-create-screen").hide();
+    $(".character-stats").hide();
+    $(".player-home").show();
+    $("#show-stats").show();
+    $(".player-home").show();
+  });
+
+  $('#show-stats').click(function() {
+    $(".character-stats").toggle();
     var charName = $("#charName").val();
-    var codeHex = $('.color-holder').css("background-color");
+    var codeHex = $('.cat-image').css("fill");
     var strength = $('#strVal').text();
     var accuracy = $('#accVal').text();
     var defense = $('#defVal').text();
     var vitality = $('#vitVal').text();
+    // var level = $('#vitVal').text();
+    // var stats = [charName, codeHex, strength, accuracy, defense, vitality];
+
     $(".display-name").html(charName);
     $(".display-color").html(codeHex);
     $(".display-strength").html(strength);
     $(".display-accuracy").html(accuracy);
     $(".display-defense").html(defense);
     $(".display-vitality").html(vitality);
+    // $(".display-level").html(level);
   });
 
+  $('#arena').click(function() {
+    $(".player-home").hide();
+    $(".arena").show();
+  });
 });
