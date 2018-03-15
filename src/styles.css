@@ -3,27 +3,93 @@ body {
   height: 100%
 }
 
+label {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
 .container {
   height: 100%;
   position: relative;
 }
 
-.col-md-6 {
-  display: table;
-  height: 100vh;
-  position: relative;
+.modifier {
+  width: 150px;
+  height: 45px;
+  margin-left: 15px;
+  font-size: 18px;
 }
 
-.inner {
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
+.row {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#cat {
+#cat-image {
   display: block;
   margin: 40px auto;
   height: 500px;
   background-color: beige;
   position: relative;
+}
+
+/* Color Customization */
+
+.color-wrapper {
+  display: block;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.color-wrapper p {
+	margin-bottom: 5px;
+}
+
+.hex-input {
+	border: 1px solid #AAA;
+	color: #666;
+	text-transform: uppercase;
+	text-align: left;
+	outline: none;
+  padding: 10px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
+.color-picker {
+	width: 300px;
+	background: #F3F3F3;
+	height: 100px;
+	padding: 5px;
+	border: 5px solid #fff;
+	position: relative;
+}
+
+.color-holder {
+	background: #fff;
+	cursor: pointer;
+	border: 1px solid #AAA;
+	width: 44px;
+	height: 44px;
+	float: left;
+	margin-left: 5px;
+  margin-right: 5px;
+}
+
+.color-picker .color-item {
+	cursor: pointer;
+  display: inline-block;
+	width: 22px;
+	height: 22px;
+	list-style-type: none;
+	margin: 2px;
+	border: 1px solid #DDD;
+}
+
+.color-picker .color-item:hover {
+	border: 1px solid #666;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+	filter:alpha(opacity=8);
 }

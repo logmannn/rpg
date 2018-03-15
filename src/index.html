@@ -14,48 +14,74 @@
         <form id="char-creation">
           <label for="charName">Enter Kitty's Name: </label>
           <input type="text" name="charName" class="form-control">
-          <br><br>
-          <label>
-            Color:
-            <br />
-            <input id="colorChoice" type="color" value="#333" />
-          </label>
-          <a id="changeColor">Change Color</a>
-          <br><br>
-          <label for="str">Strength: </label>
-          <span id="strVal">0</span>
           <br>
-          <button type="button" id="str-decrement" class="modifier decrement btn btn-danger">-</button>
-          <button type="button" id="str-increment" class="modifier increment btn btn-primary">+</button>
-          <hr>
-          <label for="acc">Accuracy: </label>
-          <span id="accVal">0</span>
-          <br>
-          <button type="button" id="acc-decrement" class="modifier decrement btn btn-danger">-</button>
-          <button type="button" id="acc-increment" class="modifier increment btn btn-primary">+</button>
+          <div class="color-wrapper">
+            <p>Choose color (# hex)</p>
+            <input type="text" name="custom_color" placeholder="#FFFFFF" class="hex-input" id="pickcolor">
+            <span class="color-holder call-picker"></span>
+            <span class="color-picker" id="color-picker" style="display: none"></span>
+            &emsp;
+            <button id="reset-color" type="button" class="btn btn-primary">Reset</button>
+          </div>
 
           <hr>
-          <label for="def">Defense: </label>
-          <span id="defVal">0</span>
-          <br>
-          <button type="button" id="def-decrement" class="modifier decrement btn btn-danger">-</button>
-          <button type="button" id="def-increment" class="modifier increment btn btn-primary">+</button>
+
+          <div class="row">
+            <div class="col-md-3">
+              <label for="str">Strength: </label>
+              <span id="strVal">0</span>
+            </div>
+            <div class="col-md-9">
+              <button type="button" id="str-decrement" class="modifier decrement btn btn-danger">-</button>
+              <button type="button" id="str-increment" class="modifier increment btn btn-primary">+</button>
+            </div>
+          </div>
 
           <hr>
-          <label for="vit">Vitality: </label>
-          <span id="vitVal">0</span>
-          <br>
-          <button type="button" id="vit-decrement" class="modifier decrement btn btn-danger">-</button>
-          <button type="button" id="vit-increment" class="modifier increment btn btn-primary">+</button>
+
+          <div class="row">
+            <div class="col-md-3">
+              <label for="acc">Accuracy: </label>
+              <span id="accVal">0</span>
+            </div>
+            <div class="col-md-9">
+              <button type="button" id="acc-decrement" class="modifier decrement btn btn-danger">-</button>
+              <button type="button" id="acc-increment" class="modifier increment btn btn-primary">+</button>
+            </div>
+          </div>
 
           <hr>
-          <button type="submit" class="btn btn-warning">Create!</button>
+
+          <div class="row">
+            <div class="col-md-3">
+              <label for="def">Defense: </label>
+              <span id="defVal">0</span>
+            </div>
+            <div class="col-md-9">
+              <button type="button" id="def-decrement" class="modifier decrement btn btn-danger">-</button>
+              <button type="button" id="def-increment" class="modifier increment btn btn-primary">+</button>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-md-3">
+              <label for="vit">Vitality: </label>
+              <span id="vitVal">0</span>
+            </div>
+            <div class="col-md-9">
+              <button type="button" id="vit-decrement" class="modifier decrement btn btn-danger">-</button>
+              <button type="button" id="vit-increment" class="modifier increment btn btn-primary">+</button>
+            </div>
+          </div>
+
+          <hr>
+          <button type="submit" class="btn btn-success">Create!</button>
         </form>
       </div>
       <div class="col-md-6">
-        <div class="inner">
-          <img id="cat" src="http://i.cubeupload.com/FfaIjE.png" alt="angry">
-        </div>
+        <img id="cat-image" src="http://i.cubeupload.com/FfaIjE.png" alt="angry">
       </div>
     </div>
   </body>
